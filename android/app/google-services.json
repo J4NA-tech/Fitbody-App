@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "660836538281",
+    "project_id": "fitbodys-8f0b5",
+    "storage_bucket": "fitbodys-8f0b5.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:660836538281:android:f5588052c1d4955d16d6b8",
+        "android_client_info": {
+          "package_name": "com.example.fitbodys"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCdt_3fwEvE8nkoTvb4JkHe2ybmZVpBcG0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

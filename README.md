@@ -4,11 +4,7 @@
   <strong>A Flutter-based mobile fitness application for personalized workouts, progress tracking, and a better fitness experience.</strong>
 </p>
 
-<p align="center">
-  <img src="images/Home%20Screen%20%E2%80%93%20Recommendations%20%26%20Motivation.png" width="230"/>
-  <img src="images/Workout%20Plans.png" width="230"/>
-  <img src="images/Progress%20%26%20Workout%20History.png" width="230"/>
-</p>
+
 
 ## 📱 About
 

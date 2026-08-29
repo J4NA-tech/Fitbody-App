@@ -1,219 +1,103 @@
-# FitBody – Mobile Fitness Application
+# FitBody — Mobile Fitness Application
 
 <p align="center">
-  <strong>A personalized mobile fitness application built with Flutter</strong>
-</p>
-
-<p align="center">
-  <img src="images/fitbody_logo.png" alt="FitBody Logo" width="120"/>
+  <img src="images/Oboarding1.png" width="200"/>
+  <img src="images/Oboarding2.png" width="200"/>
+  <img src="images/Oboarding3.png" width="200"/>
+  <img src="images/Oboarding4.png" width="200"/>
 </p>
 
 ## 📱 About the Project
 
-**FitBody** is a mobile fitness application developed as a Computer Engineering graduation project.
+**FitBody** is a mobile fitness application developed as a Computer Engineering graduation project using **Flutter and Dart**.
 
-The application helps users discover workout plans based on their fitness goals and experience levels, track completed workouts, monitor their progress, and access motivational fitness content.
+The application is designed to help users create a personalized fitness experience based on their goals and activity levels. Users can explore exercise plans, follow workout videos, track completed workouts, and access motivational and health-related content.
 
-The project focuses on providing a **clean, modern, and user-friendly mobile experience** while integrating cloud-based authentication and data storage.
-
----
+The project focuses on providing a **clean, modern, and user-friendly mobile experience** while using cloud-based services for authentication and data management.
 
 ## ✨ Features
 
-* 🔐 **User Authentication**
+* 🔐 User registration and login
+* 👤 Personalized user profiles
+* 🎯 Goal and activity-level selection
+* 🏋️ Exercise plans
+* 💪 Strength, Endurance, and Flexibility categories
+* 📊 Workout history and progress tracking
+* 🔥 Calories and workout statistics
+* 🎥 Exercise videos
+* 📰 Motivational and health-related articles
+* ⚙️ User settings
+* 🌙 Dark mode
+* 🌍 Language preferences
 
-  * User registration and login
-  * Session management
-  * Password recovery
+## 🛠️ Technologies
 
-* 👤 **User Profile**
-
-  * Personal information management
-  * Fitness goal selection
-  * Activity level selection
-
-* 🏋️ **Workout Plans**
-
-  * Beginner, Intermediate, and Advanced levels
-  * Strength, Endurance, and Flexibility categories
-  * Workout details and exercise videos
-
-* 📊 **Workout History & Progress**
-
-  * Completed workout tracking
-  * Workout duration
-  * Estimated calories burned
-  * Completed exercise statistics
-
-* 📰 **Fitness & Motivational Content**
-
-  * Daily workout recommendations
-  * Motivational messages
-  * Fitness-related articles
-
-* ⚙️ **Settings**
-
-  * Profile information
-  * Language preferences
-  * Dark mode
-  * Logout functionality
-
----
-
-## 🛠️ Tech Stack
-
-| Technology             | Purpose                                       |
+| Technology             | Usage                                         |
 | ---------------------- | --------------------------------------------- |
 | **Flutter**            | Cross-platform mobile application development |
 | **Dart**               | Application programming language              |
 | **Supabase**           | Authentication and user session management    |
-| **Firebase Firestore** | Cloud data storage                            |
+| **Firebase Firestore** | User data storage                             |
 | **Android Studio**     | Development environment                       |
-| **Git & GitHub**       | Version control and source code management    |
+| **Git & GitHub**       | Version control and project management        |
 
----
-
-## 🏗️ Application Architecture
-
-The application follows a modular structure where UI screens and functionality are organized into separate components.
-
-### Main Layers
-
-**Presentation / UI Layer**
-
-* Login and registration screens
-* Onboarding screens
-* Home screen
-* Workout plans
-* Workout history
-* Settings
-
-**Authentication Layer**
-
-* Supabase Authentication
-* User registration
-* User login
-* Session management
-* Password recovery
-
-**Data Layer**
-
-* Firebase Firestore
-* User profile data
-* Workout history
-* Application-related data
-
-### Simplified Architecture
+## 🏗️ Project Structure
 
 ```text
-┌─────────────────────────────┐
-│       Flutter Application   │
-│                             │
-│  UI / Screens / Navigation  │
-└──────────────┬──────────────┘
-               │
-       ┌───────┴────────┐
-       │                │
-       ▼                ▼
-┌──────────────┐  ┌───────────────┐
-│   Supabase   │  │    Firebase   │
-│              │  │   Firestore   │
-│ Authentication│  │               │
-│ & Sessions   │  │ User Data     │
-└──────────────┘  └───────────────┘
+lib/
+├── Homepage/
+│   ├── home_screen.dart
+│   ├── plans_page.dart
+│   ├── log_page.dart
+│   └── settings_page.dart
+│
+├── User information/
+│   └── User profile and authentication related functionality
+│
+├── Onboarding/
+│   └── Onboarding screens
+│
+├── Login pages/
+│   └── Login and registration screens
+│
+└── main.dart
 ```
 
----
+## 📸 Screenshots
 
-# 📸 Screenshots
-
-## Onboarding
+### Onboarding
 
 <p align="center">
-  <img src="images/onboarding1.png" width="220"/>
-  <img src="images/onboarding2.png" width="220"/>
-  <img src="images/onboarding3.png" width="220"/>
-  <img src="images/onboarding4.png" width="220"/>
+  <img src="images/Oboarding1.png" width="220"/>
+  <img src="images/Oboarding2.png" width="220"/>
+  <img src="images/Oboarding3.png" width="220"/>
+  <img src="images/Oboarding4.png" width="220"/>
 </p>
 
-## Authentication
+### Home & Profile
 
 <p align="center">
-  <img src="images/login.png" width="250"/>
+  <img src="images/girl1.png" width="250"/>
+  <img src="images/profilef.jpg" width="250"/>
 </p>
 
-Users can securely register and log in using their email and password.
-
-## Home Screen
+### Workout Log
 
 <p align="center">
-  <img src="images/home.png" width="250"/>
+  <img src="images/log.png" width="250"/>
 </p>
 
-The home screen provides workout recommendations, motivational content, and fitness-related articles.
+## 🔐 Backend & Security
 
-## Workout Plans
+The application uses **Supabase Authentication** for user authentication and **Firebase Firestore** for storing user-related information.
 
-<p align="center">
-  <img src="images/workout_plans.png" width="250"/>
-</p>
+> **Note:** Sensitive credentials such as Supabase service-role keys, passwords, and private API secrets should never be committed to the repository.
 
-Users can browse workout plans according to their experience level and fitness goals.
+For security reasons, backend credentials are intentionally excluded from the public source code.
 
-## Progress & Workout History
+## 🚀 Getting Started
 
-<p align="center">
-  <img src="images/progress.png" width="250"/>
-</p>
-
-Users can review completed workouts and track their overall workout progress.
-
-## Settings
-
-<p align="center">
-  <img src="images/settings.png" width="250"/>
-</p>
-
-The settings page allows users to manage their profile, preferences, and account session.
-
-> **Note:** Replace the image filenames above with the actual filenames inside the project's `images/` directory.
-
----
-
-# 📁 Project Structure
-
-```text
-fitbodys/
-│
-├── android/
-├── ios/
-├── linux/
-├── macos/
-├── web/
-├── windows/
-│
-├── images/
-│
-├── lib/
-│   ├── Homepages/
-│   ├── User information/
-│   ├── Onboarding/
-│   ├── Login pages/
-│   └── main.dart
-│
-├── test/
-│
-├── pubspec.yaml
-├── pubspec.lock
-├── analysis_options.yaml
-└── README.md
-```
-
----
-
-# 🚀 Getting Started
-
-## Prerequisites
+### Prerequisites
 
 Make sure you have the following installed:
 
@@ -221,8 +105,9 @@ Make sure you have the following installed:
 * Dart SDK
 * Android Studio
 * Android Emulator or a physical Android device
+* Git
 
-## Installation
+### Installation
 
 Clone the repository:
 
@@ -236,7 +121,7 @@ Navigate to the project directory:
 cd Fitbody-App
 ```
 
-Install the dependencies:
+Install dependencies:
 
 ```bash
 flutter pub get
@@ -248,56 +133,32 @@ Run the application:
 flutter run
 ```
 
----
+## 🎓 Academic Project
 
-# 🔐 Backend Configuration
+**Project:** Mobile Fitness Application
+**Department:** Computer Engineering
+**Faculty:** Faculty of Engineering and Natural Sciences
+**Semester:** Spring 2025
 
-The application uses **Supabase** for authentication and **Firebase Firestore** for cloud data storage.
+**Developer:** Jana El Samra
 
-For security reasons, private credentials and service-level keys should **not** be committed to the repository.
+**Supervisor:** Dr. Öğr. Perihan Pehlivanoğlu
 
-Before running the application, configure your own backend credentials according to the project's configuration.
+## 🔮 Future Improvements
 
-> Never expose Supabase `service_role` keys, database passwords, private API keys, or other server-side credentials in source control.
-
----
-
-# 🔮 Future Improvements
-
-Possible future improvements include:
+Potential future improvements include:
 
 * 🤖 AI-powered personalized workout recommendations
-* 🥗 Nutrition and diet tracking
+* 🥗 Diet and nutrition tracking
 * 😴 Sleep tracking
-* 📈 More advanced progress analytics
-* 🔔 Workout reminders and notifications
-* 👥 Social/community features
-* 🎯 More advanced personalization based on workout history
+* 📈 Advanced performance analytics
+* 🧠 AI-based motivational and behavioral analysis
+* 📱 Improved cross-platform support
 
-These features represent potential future extensions of the current application.
+## 📄 Project Report
 
----
+The project was developed as a graduation project and includes research, system architecture, methodology, implementation details, testing, and evaluation of the FitBody mobile application.
 
-# 🎓 Academic Project
+## 📌 Disclaimer
 
-This application was developed as a **Computer Engineering Graduation Project** in 2025.
-
-The project focuses on mobile application development, cloud-based authentication, data management, and user-centered interface design.
-
----
-
-# 👩‍💻 Author
-
-**Jana El Samra**
-
-Computer Engineering
-
-GitHub:
-https://github.com/J4NA-tech
-
----
-
-## 📄 License
-
-This project was developed for educational and portfolio purposes.
-
+This project was developed for educational and portfolio purposes as part of a Computer Engineering graduation project.

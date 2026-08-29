@@ -1,45 +1,121 @@
 # FitBody — Mobile Fitness Application
 
 <p align="center">
-  <img src="images/Oboarding1.png" width="200"/>
-  <img src="images/Oboarding2.png" width="200"/>
-  <img src="images/Oboarding3.png" width="200"/>
-  <img src="images/Oboarding4.png" width="200"/>
+  <strong>A Flutter-based mobile fitness application for personalized workouts, progress tracking, and a better fitness experience.</strong>
 </p>
 
-## 📱 About the Project
+<p align="center">
+  <img src="images/Home%20Screen%20%E2%80%93%20Recommendations%20%26%20Motivation.png" width="230"/>
+  <img src="images/Workout%20Plans.png" width="230"/>
+  <img src="images/Progress%20%26%20Workout%20History.png" width="230"/>
+</p>
 
-**FitBody** is a mobile fitness application developed as a Computer Engineering graduation project using **Flutter and Dart**.
+## 📱 About
 
-The application is designed to help users create a personalized fitness experience based on their goals and activity levels. Users can explore exercise plans, follow workout videos, track completed workouts, and access motivational and health-related content.
+**FitBody** is a mobile fitness application developed with **Flutter and Dart** as a Computer Engineering graduation project.
 
-The project focuses on providing a **clean, modern, and user-friendly mobile experience** while using cloud-based services for authentication and data management.
+The application allows users to create a personalized fitness experience based on their goals and activity levels. Users can explore workout plans, watch exercise videos, track completed workouts, monitor their progress, and access motivational and health-related content.
+
+The project combines a modern mobile UI with cloud-based authentication and data management using **Supabase** and **Firebase Firestore**.
 
 ## ✨ Features
 
-* 🔐 User registration and login
+* 🔐 User registration and authentication
 * 👤 Personalized user profiles
-* 🎯 Goal and activity-level selection
-* 🏋️ Exercise plans
+* 🎯 Fitness goal and activity-level selection
+* 🏋️ Workout plans
 * 💪 Strength, Endurance, and Flexibility categories
+* 🎥 Exercise video integration
 * 📊 Workout history and progress tracking
 * 🔥 Calories and workout statistics
-* 🎥 Exercise videos
-* 📰 Motivational and health-related articles
+* 📰 Motivational and health-related content
 * ⚙️ User settings
 * 🌙 Dark mode
 * 🌍 Language preferences
 
-## 🛠️ Technologies
+## 🛠️ Tech Stack
 
-| Technology             | Usage                                         |
+| Technology             | Purpose                                       |
 | ---------------------- | --------------------------------------------- |
 | **Flutter**            | Cross-platform mobile application development |
 | **Dart**               | Application programming language              |
-| **Supabase**           | Authentication and user session management    |
+| **Supabase**           | Authentication and session management         |
 | **Firebase Firestore** | User data storage                             |
 | **Android Studio**     | Development environment                       |
-| **Git & GitHub**       | Version control and project management        |
+| **Git & GitHub**       | Version control                               |
+
+## 📸 Screenshots
+
+### 🔐 Login Screen
+
+User authentication interface for signing in and accessing the application.
+
+<p align="center">
+  <img src="images/Login%20Screen.png" width="260"/>
+</p>
+
+---
+
+### 🏠 Home Screen — Recommendations & Motivation
+
+The main dashboard provides workout recommendations, motivational content, and health-related articles.
+
+<p align="center">
+  <img src="images/Home%20Screen%20%E2%80%93%20Recommendations%20%26%20Motivation.png" width="260"/>
+</p>
+
+---
+
+### 🏋️ Workout Plans
+
+Users can explore workout plans based on their fitness level and training category.
+
+<p align="center">
+  <img src="images/Workout%20Plans.png" width="260"/>
+</p>
+
+---
+
+### 📊 Progress & Workout History
+
+Users can track completed workouts, calories burned, total workout time, and their overall workout history.
+
+<p align="center">
+  <img src="images/Progress%20%26%20Workout%20History.png" width="260"/>
+</p>
+
+---
+
+### 🚀 Splash Screen
+
+The initial screen displayed when launching the FitBody application.
+
+<p align="center">
+  <img src="images/Splash%20Screen.png" width="260"/>
+</p>
+
+---
+
+### 👋 Onboarding
+
+The onboarding flow introduces users to the application's main concept and features.
+
+<p align="center">
+  <img src="images/Onboarding%20%E2%80%93%20Welcome.png" width="200"/>
+  <img src="images/Onboarding%20%E2%80%93%20Get%20Active.png" width="200"/>
+  <img src="images/Onboarding%20%E2%80%93%20Start%20Your%20Journey.png" width="200"/>
+  <img src="images/Onboarding%20%E2%80%93%20Join%20the%20Community.png" width="200"/>
+</p>
+
+---
+
+### ⚙️ Settings Screen
+
+Users can manage their profile information, language preferences, dark mode, and account settings.
+
+<p align="center">
+  <img src="images/Settings%20Screen.png" width="260"/>
+</p>
 
 ## 🏗️ Project Structure
 
@@ -52,7 +128,7 @@ lib/
 │   └── settings_page.dart
 │
 ├── User information/
-│   └── User profile and authentication related functionality
+│   └── User profile and authentication functionality
 │
 ├── Onboarding/
 │   └── Onboarding screens
@@ -63,37 +139,16 @@ lib/
 └── main.dart
 ```
 
-## 📸 Screenshots
-
-### Onboarding
-
-<p align="center">
-  <img src="images/Oboarding1.png" width="220"/>
-  <img src="images/Oboarding2.png" width="220"/>
-  <img src="images/Oboarding3.png" width="220"/>
-  <img src="images/Oboarding4.png" width="220"/>
-</p>
-
-### Home & Profile
-
-<p align="center">
-  <img src="images/girl1.png" width="250"/>
-  <img src="images/profilef.jpg" width="250"/>
-</p>
-
-### Workout Log
-
-<p align="center">
-  <img src="images/log.png" width="250"/>
-</p>
-
 ## 🔐 Backend & Security
 
-The application uses **Supabase Authentication** for user authentication and **Firebase Firestore** for storing user-related information.
+FitBody uses:
 
-> **Note:** Sensitive credentials such as Supabase service-role keys, passwords, and private API secrets should never be committed to the repository.
+* **Supabase Authentication** for user registration, login, and session management.
+* **Firebase Firestore** for storing and retrieving user-related information.
 
-For security reasons, backend credentials are intentionally excluded from the public source code.
+Sensitive credentials and private backend keys should **not** be committed to the repository.
+
+Backend secrets are intentionally excluded from the public source code.
 
 ## 🚀 Getting Started
 
@@ -107,27 +162,25 @@ Make sure you have the following installed:
 * Android Emulator or a physical Android device
 * Git
 
-### Installation
-
-Clone the repository:
+### Clone the Repository
 
 ```bash
 git clone https://github.com/J4NA-tech/Fitbody-App.git
 ```
 
-Navigate to the project directory:
+### Navigate to the Project
 
 ```bash
 cd Fitbody-App
 ```
 
-Install dependencies:
+### Install Dependencies
 
 ```bash
 flutter pub get
 ```
 
-Run the application:
+### Run the Application
 
 ```bash
 flutter run
@@ -136,17 +189,16 @@ flutter run
 ## 🎓 Academic Project
 
 **Project:** Mobile Fitness Application
+**Developer:** Jana El Samra
 **Department:** Computer Engineering
 **Faculty:** Faculty of Engineering and Natural Sciences
 **Semester:** Spring 2025
 
-**Developer:** Jana El Samra
-
-**Supervisor:** Dr. Öğr. Perihan Pehlivanoğlu
+**Project Supervisor:** Dr. Öğr. Perihan Pehlivanoğlu
 
 ## 🔮 Future Improvements
 
-Potential future improvements include:
+Possible future improvements include:
 
 * 🤖 AI-powered personalized workout recommendations
 * 🥗 Diet and nutrition tracking
@@ -155,9 +207,11 @@ Potential future improvements include:
 * 🧠 AI-based motivational and behavioral analysis
 * 📱 Improved cross-platform support
 
-## 📄 Project Report
+## 📄 Project Background
 
-The project was developed as a graduation project and includes research, system architecture, methodology, implementation details, testing, and evaluation of the FitBody mobile application.
+FitBody was developed as a graduation project with the goal of creating a simple, modern, and personalized digital fitness experience.
+
+The project covers mobile application development, UI/UX design, authentication, cloud database integration, user data management, and workout progress tracking.
 
 ## 📌 Disclaimer
 
